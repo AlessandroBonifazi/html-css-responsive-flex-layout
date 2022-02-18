@@ -1,0 +1,33 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* -- Header -- */
+header {
+    height: 100px;
+    width: 100vw;
+    background-color: #0084fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 60px;
+    width: 120px;
+    background-color: white;
+}
+
+.button {
+    height: 60px;
+    width: 60px;
+    background-color: white;
+}
