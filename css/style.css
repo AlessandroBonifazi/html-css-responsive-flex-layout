@@ -103,15 +103,19 @@ article p {
 /* Media Query */
 @media screen and (min-width: 837px) {
     .first-section {
+        width: 90%;
+        margin: auto;
         display: flex;
         flex-flow: row wrap;
     }
     .first-section article{
-        width: 30%;
+        width: calc(100% / 3 - 40px);
+        flex: 1 0 auto;
         margin: 10px;
     }
     #main-article {
         width: 60%;
+        flex-grow: 2;
         align-self: stretch;
     }
     .big-img {
@@ -132,4 +136,9 @@ article p {
         height: 150px;
         width: 150px;
     }
+}
+
+@media screen and (min-width: 1400px) {
+    
+    
 }
