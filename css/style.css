@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
+
+
 /* Utilities */
 .bg-blue {
     background-color: #9692e6;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.circle {
+    border-radius: 50%;
 }
 
 /* -- Header -- */
@@ -29,12 +39,16 @@ header {
     height: 60px;
     width: 120px;
     background-color: white;
+    border-radius: 10px;
+
 }
 
 .button {
     height: 60px;
     width: 60px;
     background-color: white;
+    border-radius: 10px;
+
 }
 
 /* -- Main -- */
@@ -64,6 +78,7 @@ article {
     width: 100px;
     background-color: black;
     margin: 20px 0px;
+    border-radius: 10px;
 }
 
 article h3 {
@@ -80,6 +95,41 @@ article p {
 .big-img {
     height: 300px;
     width: 300px;
-    background-color: yellow;
-    
+    background-color: yellow; 
+    border-radius: 10px;
+
+}
+
+/* Media Query */
+@media screen and (min-width: 837px) {
+    .first-section {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .first-section article{
+        width: 30%;
+        margin: 10px;
+    }
+    #main-article {
+        width: 60%;
+        align-self: stretch;
+    }
+    .big-img {
+        height: 500px;
+        width: 500px;
+    }
+    .profile {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .profile p {
+        text-align: left;
+        margin-left: 20px;
+        width: 30%;
+    }
+    .profile .img {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+    }
 }
