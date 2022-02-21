@@ -129,13 +129,11 @@ article p {
         flex-flow: row wrap;
     }
     .first-section article{
-        width: calc(100% / 3 - 40px);
-        flex: 1 0 auto;
+        width: calc(100% / 3 - 20px);
         margin: 10px;
     }
     #main-article {
-        width: 60%;
-        flex-grow: 2;
+        width: calc(100% / 3 * 2 - 20px);
         align-self: stretch;
     }
     .big-img {
