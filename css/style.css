@@ -10,13 +10,14 @@
 .bg-blue {
     background-color: #9692e6;
 }
-
 .bg-white {
     background-color: white;
 }
-
 .circle {
     border-radius: 50%;
+}
+.hide {
+    display: none;
 }
 
 /* -- Header -- */
@@ -30,11 +31,17 @@ header {
 }
 
 .header-container {
+    height: 100px;
     width: 80%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+}
 .logo {
     height: 60px;
     width: 120px;
@@ -48,6 +55,7 @@ header {
     width: 60px;
     background-color: white;
     border-radius: 10px;
+    margin: 10px;
 
 }
 
@@ -97,13 +105,25 @@ article p {
     width: 300px;
     background-color: yellow; 
     border-radius: 10px;
-
 }
 
+.second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* Media Query */
 @media screen and (min-width: 837px) {
     .first-section {
-        width: 90%;
+        width: 85%;
         margin: auto;
         display: flex;
         flex-flow: row wrap;
@@ -136,9 +156,42 @@ article p {
         height: 150px;
         width: 150px;
     }
+    .third-section {
+        width: 70%;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 1400px) {
-    
-    
+    .header-container {
+        width: 60%;
+    }
+    .hide {
+        display: inline-flex;
+    }
+    .first-section {
+        width: 60%;
+    }
+    .second-section {
+        width: 50%;
+        flex-direction: row;
+    }
+    .second-section p {
+        font-size: 20px;
+    }
+    .big-img {
+        height: 250px;
+        width: 250px;
+    }
+    .col {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .third-section {
+        width: 55%;
+        margin: auto;
+    }
 }
